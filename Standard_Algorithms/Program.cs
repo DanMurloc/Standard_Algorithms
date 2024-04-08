@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Standard_Algorithms;
+﻿using Standard_Algorithms;
 
 Console.WriteLine("Hello, World!");
 
@@ -11,11 +10,12 @@ a.RevBubbleInvSort(ref arr);
 
 for (int i = 0; i < arr.Length; i++)
     Console.Write(arr[i] + " ");
+FactAndFib b = new FactAndFib();
 Console.WriteLine("\n##########################################");
-Console.WriteLine(a.Factorial(10));
-Console.WriteLine(a.FactorialFor(10));
+Console.WriteLine(b.Factorial(10));
+Console.WriteLine(b.FactorialFor(10));
 Console.WriteLine("##########################################");
-Console.WriteLine(a.Fibonachi(5));
-Console.WriteLine(a.FibonachiFor(5));
+Console.WriteLine(b.Fibonachi(5));
+Console.WriteLine(b.FibonachiFor(5));
 
 Console.WriteLine("##########################################");
