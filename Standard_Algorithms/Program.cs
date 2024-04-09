@@ -17,5 +17,20 @@ Console.WriteLine(b.FactorialFor(10));
 Console.WriteLine("##########################################");
 Console.WriteLine(b.Fibonachi(5));
 Console.WriteLine(b.FibonachiFor(5));
-
 Console.WriteLine("##########################################");
+
+int[] arr2 = { 8, 4, 7, 1, 2, 8, 4, 7, 1, 2 };
+
+Manipulating_An_Array c = new Manipulating_An_Array();
+c.RemoveAt(ref arr2,2);
+for (int i = 0; i < arr2.Length; i++)
+    Console.Write(arr2[i] + " ");
+Console.WriteLine("\n##########################################");
+c.RemoveFirst(ref arr2);
+for (int i = 0; i < arr2.Length; i++)
+    Console.Write(arr2[i] + " ");
+Console.WriteLine("\n##########################################");
+c.RemoveEnd(ref arr2);
+for (int i = 0; i < arr2.Length; i++)
+    Console.Write(arr2[i] + " ");
+Console.WriteLine("\n##########################################");
