@@ -8,7 +8,10 @@ namespace Standard_Algorithms
 {
     public class Sorting_standard
     {
-
+        /// <summary>
+        /// Сортировка пузырькоам
+        /// </summary>
+        /// <param name="arr"></param>
         public void BubbleSort(ref int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -24,6 +27,10 @@ namespace Standard_Algorithms
                 }
             }
         }
+        /// <summary>
+        /// сортировка пузырьком по убыванию
+        /// </summary>
+        /// <param name="arr"></param>
         public void RevBubbleSort(ref int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -39,6 +46,11 @@ namespace Standard_Algorithms
                 }
             }
         }
+
+        /// <summary>
+        /// Сортировка пузырьком с конца
+        /// </summary>
+        /// <param name="arr"></param>
         public void BubbleInvSort(ref int[] arr)
         {
             for (int i = arr.Length - 1; i > 0; i--)
@@ -54,6 +66,10 @@ namespace Standard_Algorithms
                 }
             }
         }
+        /// <summary>
+        /// Сортировка пузырьком 
+        /// </summary>
+        /// <param name="arr"></param>
         public void RevBubbleInvSort(ref int[] arr)
         {
             for (int i = arr.Length - 1; i > 0; i--)

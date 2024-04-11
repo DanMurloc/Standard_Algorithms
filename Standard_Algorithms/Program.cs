@@ -6,7 +6,7 @@ int[] arr = {8,4,7,1,2};
 
 Sorting_standard a = new Sorting_standard();
 
-a.RevBubbleInvSort(ref arr);
+a.BubbleSort(ref arr);
 
 for (int i = 0; i < arr.Length; i++)
     Console.Write(arr[i] + " ");
@@ -33,4 +33,20 @@ Console.WriteLine("\n##########################################");
 c.RemoveEnd(ref arr2);
 for (int i = 0; i < arr2.Length; i++)
     Console.Write(arr2[i] + " ");
+Console.WriteLine("\n##########################################");
+
+int[] arr3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+c.RemoveAllFromIndexBack(ref arr3, 0);
+for (int i = 0; i < arr3.Length; i++)
+    Console.Write(arr3[i] + " ");
+Console.WriteLine("\n##########################################");
+
+c.RemoveAllFromIndexForward(ref arr3, 4);
+for (int i = 0; i < arr3.Length; i++)
+    Console.Write(arr3[i] + " ");
+Console.WriteLine("\n##########################################");
+int[] arr4 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+c.ReverArray(ref arr4);
+for (int i = 0; i < arr4.Length; i++)
+    Console.Write(arr4[i] + " ");
 Console.WriteLine("\n##########################################");
