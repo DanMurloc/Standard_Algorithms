@@ -50,3 +50,12 @@ c.ReverArray(ref arr4);
 for (int i = 0; i < arr4.Length; i++)
     Console.Write(arr4[i] + " ");
 Console.WriteLine("\n##########################################");
+
+Developer dev = new PanelDeveloper("ООО КирпичСтрой");
+House house2 = dev.Create();
+
+dev = new WoodDeveloper("Частный застройщик");
+House house = dev.Create();
+
+Console.ReadLine();
+Console.WriteLine("##########################################");
