@@ -66,6 +66,7 @@ namespace Standard_Algorithms
                 }
             }
         }
+       
         /// <summary>
         /// Сортировка пузырьком 
         /// </summary>
@@ -86,6 +87,37 @@ namespace Standard_Algorithms
             }
         }
 
+        public void CocktailSort(ref int[] arr)
+        {
+            int left = 0;
+            int right = arr.Length - 1;
+
+            while (left < right)
+            {
+                for (int i = left; i < right; i++)
+                {
+                    if (arr[i] > arr[i+1])
+                    {
+                        int temp = arr[i+1];
+                        arr[i+1]= arr[i];
+                        arr[i] = temp;
+                    }
+                }
+                right--;
+
+                for (int i = right; i > left;i--)
+                {
+                    if (arr[i] < arr[i - 1])
+                    {
+                        int temp = arr[i-1];
+                        arr[i-1] = arr[i];
+                        arr[i] = temp;
+                    }
+                }
+                left++;
+            }
+
+        }
     }
 
 

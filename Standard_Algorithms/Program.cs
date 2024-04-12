@@ -51,11 +51,10 @@ for (int i = 0; i < arr4.Length; i++)
     Console.Write(arr4[i] + " ");
 Console.WriteLine("\n##########################################");
 
-Developer dev = new PanelDeveloper("ООО КирпичСтрой");
-House house2 = dev.Create();
 
-dev = new WoodDeveloper("Частный застройщик");
-House house = dev.Create();
+int[] arr5 = { 3,1,6,3,8,0,6,1,2 };
+a.CocktailSort(ref arr5);
+for (int i = 0; i < arr5.Length; i++)
+    Console.Write(arr5[i] + " ");
 
-Console.ReadLine();
-Console.WriteLine("##########################################");
+Console.WriteLine("\n##########################################");
