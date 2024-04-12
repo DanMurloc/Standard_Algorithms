@@ -58,3 +58,8 @@ for (int i = 0; i < arr5.Length; i++)
     Console.Write(arr5[i] + " ");
 
 Console.WriteLine("\n##########################################");
+a.RevCocktailSort(ref arr5);
+for (int i = 0; i < arr5.Length; i++)
+    Console.Write(arr5[i] + " ");
+
+Console.WriteLine("\n##########################################");

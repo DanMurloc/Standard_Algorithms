@@ -87,6 +87,10 @@ namespace Standard_Algorithms
             }
         }
 
+        /// <summary>
+        /// Шейкер сортировка
+        /// </summary>
+        /// <param name="arr"></param>
         public void CocktailSort(ref int[] arr)
         {
             int left = 0;
@@ -117,6 +121,35 @@ namespace Standard_Algorithms
                 left++;
             }
 
+        }
+
+        /// <summary>
+        /// Шейкер сортировка по убыванию
+        /// </summary>
+        /// <param name="arr"></param>
+        public void RevCocktailSort(ref int[] arr)
+        {
+            int left = 0;
+            int right = arr.Length - 1;
+            while (left < right)
+            {
+                for (int i = left; i < right; i++)
+                {
+                    if (arr[i] < arr[i+1])
+                    {
+                        (arr[i], arr[i + 1]) = (arr[i + 1], arr[i]);
+                    }
+                }
+                right--;
+                for (int i = right; i > left; i--)
+                {
+                    if (arr[i] > arr[i-1])
+                    {
+                        (arr[i], arr[i - 1]) = (arr[i - 1], arr[i]);
+                    }
+                }
+                left++;
+            }
         }
     }
 
