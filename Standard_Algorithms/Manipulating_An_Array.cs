@@ -78,5 +78,13 @@ namespace Standard_Algorithms
             Arr = newArr;
         }
 
+        public static int[] SwapArr(int[] arr,int i,int k)
+        {
+            int temp = arr[k];
+            arr[k] = arr[i];
+            arr[i] = temp;
+            return arr;
+        }
+
     }
 }

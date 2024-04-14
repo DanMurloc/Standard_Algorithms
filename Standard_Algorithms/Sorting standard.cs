@@ -198,6 +198,10 @@ namespace Standard_Algorithms
             }
         }
 
+        /// <summary>
+        /// Сортировка Таноса
+        /// </summary>
+        /// <param name="arr"></param>
         public void ThanosSort(ref int[] arr)
         {
             bool chekSort=true;
@@ -286,6 +290,25 @@ namespace Standard_Algorithms
 
             }
 
+        }
+
+        /// <summary>
+        /// Сортировка вставками
+        /// </summary>
+        /// <param name="arr"></param>
+        public void InsertSort(ref int[] arr)
+        {
+            for (int i = 1; i < arr.Length; i++)
+            {
+                var temp = arr[i];
+                var j = i;
+                while (j > 0 && temp<arr[j-1])
+                {
+                    arr[j] = arr[j - 1];
+                    j--;
+                }
+                arr[j] = temp;
+            }
         }
     }
 

@@ -64,12 +64,12 @@ for (int i = 0; i < arr5.Length; i++)
     Console.Write(arr5[i] + " ");
 
 Console.WriteLine("\n##########################################");
-
+/*
 int[] arr7 = { 3, 1, 6, 3, 8, 7, 6, 1, 2, };
 a.BogoSort(ref arr7);
 for (int i = 0; i < arr7.Length; i++)
     Console.Write(arr7[i] + " ");
-
+*/
 Console.WriteLine("\n##########################################");
 int[] arr8 = { 3, 1, 6, 3, 8, 7, 6, 1, 2, };
 a.StalinSort(ref arr8);
@@ -81,4 +81,9 @@ a.ThanosSort(ref arr0);
 for (int i = 0; i < arr0.Length; i++)
     Console.Write(arr0[i] + " ");
 Console.WriteLine("\n##########################################");
+
+int[] arrI = { 3, 1, 2, 5, 1, 2, 6, 8, 0, 4, 1 };
+a.InsertSort(ref arrI);
+for (int i = 0; i < arrI.Length; i++)
+    Console.Write(arrI[i] + " ");
 
