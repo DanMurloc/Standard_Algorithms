@@ -86,4 +86,9 @@ int[] arrI = { 3, 1, 2, 5, 1, 2, 6, 8, 0, 4, 1 };
 a.InsertSort(ref arrI);
 for (int i = 0; i < arrI.Length; i++)
     Console.Write(arrI[i] + " ");
-
+Console.WriteLine("\n##########################################");
+int Mult = b.Multi(3, 4);
+Console.WriteLine($"Mult: {Mult}");
+int MultR = b.MultReq(3,4);
+Console.WriteLine($"Mult: {MultR}");
+Console.WriteLine("\n##########################################");

@@ -46,8 +46,24 @@ namespace Standard_Algorithms
                 result = b;
                 b += tmp;
             }
-
             return result;
+        }
+
+        public int Multi(int a, int b)
+        {
+            int result = 0;
+            for (int i = 0; i < b; i++)
+            {
+                result += a;
+            }
+            return result;
+        }
+
+        public int MultReq(int a, int b)
+        {
+            if (a == 0 || b == 0)
+                return 0;
+            return a+MultReq(a,b-1);
         }
     }
 }
